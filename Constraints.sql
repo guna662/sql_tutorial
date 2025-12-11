@@ -15,8 +15,6 @@ add column email varchar(200);
 alter table employee 
 Add column age INT CHECK (age >= 18);
 
-alter table employee
-add column age int check (age>=18);
 
 alter table employee
 rename column email to EmailAddress;
