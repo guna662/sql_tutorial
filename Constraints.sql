@@ -1,5 +1,3 @@
-create database emp_demo;
-show databases;
 create table employee(
 emp_ID int primary key,
 Last_name varchar(200),
@@ -14,7 +12,6 @@ add column email varchar(200);
 
 alter table employee 
 Add column age INT CHECK (age >= 18);
-
 
 alter table employee
 rename column email to EmailAddress;
@@ -47,7 +44,7 @@ cost decimal,
 quantity int
 );
 
-select *  from employee;        -- retrieves all rows and all columns from the employee table
+     -- retrieves all rows and all columns from the employee table
 
 insert into employee()           -- insert new rows into the values in  employee table 
 values (1,'G','Guna','Rayachoty','Kadapa',18),

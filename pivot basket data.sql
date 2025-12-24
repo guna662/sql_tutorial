@@ -23,6 +23,11 @@ select * from basket;
 
 -- method 1
 
+-- Like operator used in sql searches the specific pattern of a text(string) value of a column
+   /*in like operator '%' defines zero,single or multiple characters And the
+    underscore('_') represents single or single chatracter.*/
+    
+   
 select 
 person,
 case when basket like '%Apple%' then 'yes' else 'no' end as Apple,
@@ -41,7 +46,7 @@ if(find_in_set('Apple',basket)>0,'Yes','No') as Apple,
 if(find_in_set('Mango',basket)>0,'Yes','No') as Mango,
 if(find_in_set('Orange',basket)>0,'Yes','No') as Orange,
 if(find_in_set('Guava',basket)>0,'Yes','No') as Guava,
-if(find_in_set('Cherry',basket)>0,'Yes','No') as Cherry
+if(find_in_set('Cherry',basket)>0,'Yes','No') as Cherry  
 from basket;
 
 

@@ -1,6 +1,6 @@
 /*Question:-  Retrieve all duplicate rows for each person,
 keeping only the first occurrence*/
-
+drop table practice;
 create table practice(
 person_ID int,
 last_name varchar(255),
